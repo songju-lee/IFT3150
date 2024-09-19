@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFT3150 - Songju Lee</title>
+    <style>
+        .title-section {
+            padding-top: 2vw;
+            padding-left : 15vw;
+            padding-right : 15vw;
+            padding-bottom : 1vw;
+        }
+
+            .introduction{
+                border: 1px solid #efefef ;
+                border-radius: 5px;
+                background-color: #efefef;
+                font-size: large;
+            }
+
+            .description{
+                padding-left : 2vw;
+                padding-right: 2vw;
+                text-align: justify;
+                line-height: 1.5;
+            }
+
+        .main-section {
+            padding-left : 15vw;
+            padding-right : 15vw;
+        }
+
+        .team-section {
+            text-align: justify;
+            padding-bottom: 1vw;
+        }
+            
+            .team {
+                font-weight : 500;
+                margin-bottom: 12px;
+                font-weight:bold;
+                color:rgb(75, 52, 207);}
+
+            .members{
+                display : flex;
+                flex-direction: row;
+            }
+
+            .member{
+                text-align: center;
+                display : flex;
+                flex-direction: column;
+            }
+                .member:not(:last-child){
+                    margin-right:35px;
+                }
+
+                .role {
+                    font-weight: bold;
+
+                    margin-bottom: 8px;
+                    color :mediumslateblue;          
+                }
+
+                .member-id{
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    margin-bottom: 6px;
+                }
+
+                .member-info{
+                    font-size: 1em;
+                    font-weight: 500;
+                    margin-bottom: 3px;
+                    color:rgb(93, 93, 93);
+            
+                }
+
+                .email {
+                    margin-top: 10px;
+                    font-size: 1em;
+                    font-weight: 500;
+                    text-decoration: none ;
+                }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="title-section">
+                <h2 style="margin-bottom: 15px;"> IFT3150 - Projet d'Informatique</h2>
+                <h2 class= "title-project">La Mise à la Terre Dynamique des Notations Avec les Outils de Reconnaissance d'images AI</h2>
+                <div class = "introduction">
+                    <p class = "description">
+                        <em style="font-size:1.1em;">Description</em> - Le projet que je vais mener durant ce semestre consiste à approfondir le système prototype développé par M. Ian Arawjo et son équipe durant l'été 2024.
+                        Ce système vise à résoudre le problème de l'ancrage - ou la mise à la terre - dynamique dans les interactions homme-machine, permettant aux utilisateurs de créer et de définir de nouvelles notations à partir d'éléments visuelles tels que des croquis ou des symboles.
+                        Avec des outils de reconnaissance d'images basés sur l'IA, le système interprète ces notations et répond de manière adéquate aux intentions des utilisateurs.
+                        Mon travail consistera principalement à améliorer la communication interactive entre l'utilisateur et l'IA, en introduisant, par exemple, des nouveaux règles dans le système de notation et en réduisant les hallucinations.
+                        Nous explorerons également de nouveaux scénarios d'utilisation et surmonter des limites actuelles du système, avec pour objectif final de le faire évaluer par un public réel.
+                    </p>
+                    <p class = "description">Languages à utiliser : Python, Transcript (ou React)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class = "main-section">
+        <div>
+            <div class = "team-section">
+                <h2 class = "team">Notre équipe</h2>
+                <ul class = "members">
+                    <li class = "member">
+                        <h3 class = "role">Professeur</h3>
+                        <div class = "member-id">
+                            <span>Ian ARAWJO</span>
+                        </div>
+                        <span class = "member-info">Professeur adjoint d'interaction humain-mahine</span>
+                        <span class ="member-info">Leader du groupe Montréal HCI</span>
+                        <a class="email" href = "mailto:ian.arawjo@umontreal.ca">ian.arawjo@umontreal.ca</a>
+                    </li>
+                    <li class="member">
+                        <h3 class = "role">Étudiant</h3>
+                        <div class = "member-id">
+                            <span>Songju LEE</span>
+                        </div>
+                        <span class = "member-info">Matricule 20198117</span>
+                        <span class = "member-info">Étudiant en programme d'informatique du 1er cycle</span>
+                        <a class="email" href="mailto:songju.lee@umontreal.ca">songju.lee@umontreal.ca</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Rapport d'avancement</h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
