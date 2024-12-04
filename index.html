@@ -151,7 +151,7 @@
                     <p class="plan">Nous avons organisé une deuxième réunion, cette fois en groupe. Chaque membre a présenté ses avancées. Nous avons discuté des moyens de manipuler les jeux avec l'IA et de la façon dont l'IA pourra stocker les règles fournies par l'utilisateur. Pour la semaine suivante, nous avons convenu de réaliser un prototype de prompt : communiquer avec l'IA sur notre jeu de la même manière que nous le ferions avec un humain, en essayant différentes façons de présenter les jeux et les règles pour comprendre comment l'IA les stocke.</p>
                 </div>
                 <div>
-                    <h3> Semaine 4 (6 Octobre)</h3>
+                    <h3> Semaine 4 (06 Octobre)</h3>
                     <p class = "plan">Lors de notre troisième réunion, nous avons poursuivi notre discussion sur la manière dont l'IA stockerait les règles. Pour la semaine à venir, nous allons nous concentrer sur le prototypage, en testant des alternatives au composant de commutation afin d'explorer comment nous pouvons stocker les règles et aider l'IA à comprendre le contexte fourni. Nous avons également discuté de la manière de débuter le jeu, en décidant d'utiliser soit des boutons, soit des invites.</p>
                 </div>
                 <div>
@@ -167,13 +167,55 @@
                     <p class="plan">Nous avons commencé la transcription des vidéos enregistrées lors des entretiens. Pendant les entretiens, de nombreux gestes ont été échangés, et nous avons discuté de la façon dont l'IA pourrait les comprendre. Plus précisément, nous avons réfléchi à la manière dont l’IA pourrait reconnaître les "actions non marquées" qui surviennent lorsque les gens utilisent le langage naturel, et comment intégrer cela dans notre système Dynotate. Pour explorer cette idée, nous avons décidé de faire du prototypage en dehors du système, en examinant des exemples comme l’analyse image par image et les traces de mouvement</p>
                 </div>
                 <div>
-                    <h3> Semaine 8 (3 Novembre)</h3>
+                    <h3> Semaine 8 (03 Novembre)</h3>
                     <p class="plan">La transcription a été finalisée. Elle a été rédigée en anglais et en français, consignant tous les conversations et gestes des entretiens. Toutes les actions de l'intervieweur et de l'interviewé ont été indiquées entre [crochets], afin que le lecteur puisse suivre le déroulement de l'entretien sans voir la vidéo. Comme les progrès sur le prototypage ne sont pas encore avancées, nous avons décidé de tester diverses méthodes d'expérimentation d'ici la semaine prochaine.</p>
                 </div>
                 <div>
                     <h3> Semiane 9 (10 Novembre)</h3>
+                    <p class="plan">Moi et mon coéquipiers, nous avons fait des différents expériences individuelles pour valuer les capacités d'une IA (ChatGPT) à comprendre 
+                        les gestes humains à travers des méthodes de reconnaissance de mouvements basées sur des séquences d'images. Deux approches principales ont été testées : 
+                        <strong>frame-by-frame</strong> et <strong>smoke trails</strong>, ainsi qu'une combinaison des deux.
+                        <ul>
+                            <li>
+                                <strong>Frame-by-Frame :</strong> Une séquence d'images est fournie à l'IA pour détecter des motifs. 
+                                <em>Observations :</em> L'IA comprend les motifs simples, mais rencontre des difficultés avec des motifs complexes ou plusieurs objets.
+                            </li>
+                            <li>
+                                <strong>Smoke Trails :</strong> Des images avec un sousligneur jaune représentant les mouvements (flux et direction) sont fournies. 
+                                <em>Observations :</em> Cette méthode améliore la détection des trajectoires, mais des erreurs persistent dans des situations complexes.
+                            </li>
+                            <li>
+                                <strong>Combinaison :</strong> Frame-by-frame et smoke trails sont combinés pour tester si cela améliore la compréhension de l'IA.
+                                <em>Observations :</em> Une légère amélioration est constatée, mais la prédiction reste difficile pour les scénarios complexes.
+                            </li>
+                        </ul>
+                        En conclusion, les smoke trails apportent une amélioration par rapport à la méthode frame-by-frame seule, mais ne résolvent pas complètement les défis des interactions complexes. </p>
+                </div>
+                <div>
+                    <h3> Semiane 10 (17 Novembre)</h3>
+                    <p class="plan"> Cette semaine, en raison de la grève, le rendez-vous prévu à l'école n'a pas eu lieu. Cependant, mes coéquipiers et moi avons continué à travailler sur le projet de manière autonome. Nous avons concentré nos efforts sur le développement du front-end et du serveur du système.
+                        <ul>
+                            <li>
+                                <strong> Travail sur le frontend</strong> : Nous avons exploré les fonctionnalités de dessin de la bibliothèque de tldraw pour enrichir l'interface utilisateur. En particulier, nous avons intégré des fonction permettant de visualiser les mouvements de souris des utilisateurs au niveau du frontend.
+                            </li>
+                            <li>
+                                <strong>Travail sur le backend</strong> : Nous avons implémenté des fonctions permettant de détecter des règles définies par les utilisateurs et de les stocker en mémoire. Ces règles pourront être utilisées pour personnaliser les comportements du système en fonction des besoins des utilisateurs.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <h3> Semiane 11 (24 Novembre)</h3>
+                    <p class="plan">
+                        Cette semaine, nous avons modifié le backend pour permettre au système de mémoriser plusieurs règles au fil du temps, au lieu d'une seule. Bien que les modifications aient permis d'ajouter cette fonctionnalité, les tests ont révélé des problèmes avec l'IA : il interprète parfois mal certaines règles positionnelles, ce qui entraîne le placement incorrect d'objets, et ignore parfois des règles déjà définies.  
+                        Pendant la rencontre, nous avons modifié le code avec l'aide du professeur pour résoudre certains problèmes identifiés. Pour la semaine prochaine, nous prévoyons de créer un benchmark sémantique afin de tester et évaluer la performance du système de manière plus rigoureuse.
+                    </p>
+                </div>
+                <div>
+                    <h3> Semiane 12 (01 Décembre)</h3>
                     <p class="plan"></p>
                 </div>
+
             </div>
         </div>
     </main>
